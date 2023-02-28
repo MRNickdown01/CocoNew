@@ -154,7 +154,7 @@ body {
 }
 /* social icon  */
 .social-icon > .circle-icon {
-  padding: 8px 11px;
+  padding: 0.65rem 0.85rem;
   background-color: #bbbfc3;
   border-radius: 50%;
 }
@@ -266,7 +266,10 @@ body {
   }
   .hero-text {
     position: absolute;
-    left: 29%;
+    left: 28%;
+  }
+  .input-mode > input {
+    width: 17rem;
   }
 }
 @media screen and (max-width: 250px) {

@@ -204,7 +204,7 @@ const CuponsCard = (props) => {
               <h6 style={{ color: "#9116B7" }}>
                 Here the discription as to why should
               </h6>
-              <div className="input-mode mt-3">
+              <div className="input-mode mt-2">
                 <input
                   placeholder="Enter Subscriber Id"
                   type="text"
