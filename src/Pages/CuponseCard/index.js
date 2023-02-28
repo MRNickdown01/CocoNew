@@ -48,7 +48,6 @@ const CuponsCard = (props) => {
           style={{
             height: "100px",
             backgroundColor: "#FBDDDF",
-            marginBottom: "2rem",
           }}
         >
           <div className="hero-text my-2">
@@ -59,13 +58,13 @@ const CuponsCard = (props) => {
             ></img>
           </div>
         </div>
+
         {/* video section */}
 
         <section>
-          <div className="container">
+          <div>
             <iframe
-              width="100%"
-              height="315"
+              className="iframe-video"
               src="https://www.youtube.com/embed/CgBRYn9avf0"
               title="YouTube video player"
               frameborder="0"
@@ -77,7 +76,7 @@ const CuponsCard = (props) => {
 
         {/* cupons code section */}
 
-        <section className="py-4">
+        <section style={{ marginTop: "20px" }}>
           <div className="container">
             <ul
               className="nav nav-pills mb-3"
@@ -192,35 +191,39 @@ const CuponsCard = (props) => {
         {/* ***
       Offer section
        */}
-        <section>
-          <div className="container">
-            <div
-              className="subscirbe-footer"
+        <section style={{ margin: "20px 0px" }}>
+          <div
+            className="subscirbe-footer"
+            style={{
+              backgroundColor: "#00FF31",
+              borderRadius: "8px",
+              height: "15rem",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <h4
               style={{
-                backgroundColor: "#00FF31",
-                borderRadius: "8px",
-                height: "15rem",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                marginBottom: "1rem",
+                color: "#9116B7",
+                fontSize: "2rem",
+                letterSpacing: "1px",
+                fontWeight: "bold",
               }}
             >
-              <h4
-                style={{
-                  color: "#9116B7",
-                  fontSize: "2rem",
-                  letterSpacing: "1px",
-                  fontWeight: "bold",
-                }}
-              >
-                Stay Updated
-              </h4>
-              <h6 style={{ color: "#9116B7" }}>
-                Here the discription as to why should
-              </h6>
-              <div className="input-mode mt-2">
+              Stay Updated
+            </h4>
+            <h6
+              style={{
+                color: "#9116B7",
+                fontSize: "18px",
+                marginBottom: "15px",
+              }}
+            >
+              Here the discription as to why should
+            </h6>
+            {/* <div className="input-mode mt-2">
                 <input
                   placeholder="Enter Subscriber Id"
                   type="text"
@@ -236,20 +239,35 @@ const CuponsCard = (props) => {
                 )}
                 <div className="btn-fil">
                   <button
+                    className="btn-submit"
                     type="button"
-                    class="btn btn-info"
                     onClick={() => onSubmit}
                   >
                     Submit
                   </button>
                 </div>
-              </div>
-            </div>
+              </div> */}
+
+            <form action="">
+              <fieldset class="fieldInput">
+                <input
+                  class="form-input"
+                  placeholder="Enter Subscriber Id"
+                  type="text"
+                  onChange={(e) => onInputChange("subscriber", e.target.value)}
+                  value={user.subscriber.value}
+                />
+
+                <button type="submit" class="form-submit">
+                  Submit
+                </button>
+              </fieldset>
+            </form>
           </div>
         </section>
         {/***
          * footer section  ***/}
-        <section className="mb-4">
+        <section className="social-section" style={{ marginBottom: "20px" }}>
           <div
             className="social-icon"
             style={{

@@ -12,11 +12,9 @@ body {
   left: 45%;
 }
 /* videos section */
-#myVideo {
-  right: 0;
-  bottom: 0;
+.iframe-video {
+  height: 315px;
   width: 100%;
-  height: 100%;
 }
 /* segment  */
 .segment {
@@ -182,6 +180,41 @@ body {
   padding: 6px;
   width: 20rem;
 }
+.fieldInput {
+  width: 300px;
+  height: 35px;
+  position: relative;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 35px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.form-input {
+  width: 300px;
+  background: none;
+  border: none;
+  padding: 8px 20px;
+  font-size: 12px;
+  color: #6a7c92;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-submit {
+  font-size: 12px;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70px;
+  height: 35px;
+  border-radius: 17px;
+  border: none;
+  background: #9b00c0;
+  box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+}
+/*  */
 @media screen and (max-width: 1048px) {
   .allCard {
     display: flex;
@@ -271,6 +304,10 @@ body {
   }
   .input-mode > input {
     width: 17rem;
+  }
+  .iframe-video {
+    height: 200px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 250px) {
