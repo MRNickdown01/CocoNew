@@ -70,7 +70,7 @@ const CuponsCard = (props) => {
             allowfullscreen
           ></iframe>
         </div>
-        <section className="py-5">
+        <section className="py-4">
           <div className="container">
             <ul
               className="nav nav-pills mb-3"
@@ -233,7 +233,7 @@ const CuponsCard = (props) => {
         </section>
         {/***
          * footer section  ***/}
-        <section>
+        <section className="mb-4">
           <div
             className="social-icon"
             style={{
