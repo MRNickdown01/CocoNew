@@ -48,7 +48,7 @@ const CuponsCard = (props) => {
           style={{
             height: "100px",
             backgroundColor: "#FBDDDF",
-            marginBottom: "1rem",
+            marginBottom: "2rem",
           }}
         >
           <div className="hero-text my-2">
@@ -59,17 +59,24 @@ const CuponsCard = (props) => {
             ></img>
           </div>
         </div>
-        <div className="container">
-          <iframe
-            width="100%"
-            height="315"
-            src="https://www.youtube.com/embed/CgBRYn9avf0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
+        {/* video section */}
+
+        <section>
+          <div className="container">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/CgBRYn9avf0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+
+        {/* cupons code section */}
+
         <section className="py-4">
           <div className="container">
             <ul
