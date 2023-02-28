@@ -207,7 +207,16 @@ const CuponsCard = (props) => {
                 marginBottom: "1rem",
               }}
             >
-              <h4 style={{ color: "#9116B7" }}>Stay Updated</h4>
+              <h4
+                style={{
+                  color: "#9116B7",
+                  fontSize: "2rem",
+                  letterSpacing: "1px",
+                  fontWeight: "bold",
+                }}
+              >
+                Stay Updated
+              </h4>
               <h6 style={{ color: "#9116B7" }}>
                 Here the discription as to why should
               </h6>
