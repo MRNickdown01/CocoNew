@@ -46,35 +46,29 @@ const CuponsCard = (props) => {
         <div
           className="strip-image"
           style={{
-            width: "100%",
             height: "100px",
             backgroundColor: "#FBDDDF",
             marginBottom: "1rem",
           }}
         >
-          <div
-            className="hero-text"
-            style={{
-              position: "absolute",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
+          <div className="hero-text my-2">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/The_Himalaya_Drug_Company_logo.svg/1200px-The_Himalaya_Drug_Company_logo.svg.png"
-              style={{ width: "20%" }}
+              src="https://assets.stickpng.com/images/585990234f6ae202fedf28cf.png"
+              width="100%"
+              height="90vh"
             ></img>
           </div>
         </div>
         <div className="container">
-          <div className="video-section" style={{ height: "25rem" }}>
-            <a href="https://www.youtube.com/watch?v=OXGznpKZ_sA">
-              <video loop muted autoPlay="autoplay" controls id="myVideo">
-                <source src={flight} type="video/mp4"></source>
-              </video>
-            </a>
-          </div>
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/CgBRYn9avf0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
         <section className="py-5">
           <div className="container">
@@ -192,36 +186,49 @@ const CuponsCard = (props) => {
       Offer section
        */}
         <section>
-          <div
-            className="input-mode"
-            style={{
-              marginBottom: "1rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: "10px",
-            }}
-          >
-            <input
-              placeholder="Enter Subscriber Id"
-              type="text"
-              onChange={(e) => onInputChange("subscriber", e.target.value)}
-              value={user.subscriber.value}
-            />
-            {user.subscriber.error ? (
-              <div className="error" style={{ color: "#DC3545" }}>
-                Enter correct subscriber code
-              </div>
-            ) : (
-              ""
-            )}
-            <button
-              type="button"
-              class="btn btn-outline-info"
-              onClick={() => onSubmit}
+          <div className="container">
+            <div
+              className="subscirbe-footer"
+              style={{
+                backgroundColor: "#00FF31",
+                borderRadius: "8px",
+                height: "15rem",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: "1rem",
+              }}
             >
-              Submit
-            </button>
+              <h4 style={{ color: "#9116B7" }}>Stay Updated</h4>
+              <h6 style={{ color: "#9116B7" }}>
+                Here the discription as to why should
+              </h6>
+              <div className="input-mode mt-3">
+                <input
+                  placeholder="Enter Subscriber Id"
+                  type="text"
+                  onChange={(e) => onInputChange("subscriber", e.target.value)}
+                  value={user.subscriber.value}
+                />
+                {user.subscriber.error ? (
+                  <div className="error" style={{ color: "#DC3545" }}>
+                    Enter correct subscriber code
+                  </div>
+                ) : (
+                  ""
+                )}
+                <div className="btn-fil">
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    onClick={() => onSubmit}
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         {/***
