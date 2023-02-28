@@ -155,8 +155,9 @@ body {
 /* social icon  */
 .social-icon > .circle-icon {
   padding: 0.65rem 0.85rem;
-  background-color: #bbbfc3;
-  border-radius: 50%;
+  background-color: #9b00c0;
+  color: #ffff;
+  border-radius: 8px;
 }
 
 /* home page csss */
