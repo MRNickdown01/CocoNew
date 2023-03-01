@@ -79,57 +79,7 @@ body {
   font-size: 36px;
   font-family: "museo-sans", sans-serif;
 }
-.subMaincontainer {
-  display: flex;
-  flex-direction: row;
-}
-.subContainercard > img {
-  width: 150px;
-}
-.subContainer > .container > h3 {
-  margin: 80px 0px;
-  color: #292f36;
-  font-size: 48px;
-  font-weight: 900;
-  letter-spacing: -0.9px;
-  font-size: 36px;
-  font-family: "museo-sans", sans-serif;
-}
-/*  */
-.buttonCardsection {
-  margin: 80px 40px;
-}
-.cardTypeimg {
-  position: relative;
-}
-.cardTypeimg > img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 30px;
-}
-.subcardInfo {
-  padding: 10px 60px;
-}
-.subcardInfo > h4 {
-  font-family: "museo-sans", sans-serif;
-  margin-bottom: 18px;
-  margin-top: 15px;
-  color: #292f36;
-  font-size: 40px;
-  font-weight: 900;
-  letter-spacing: -0.4px;
-  font-size: 30px;
-}
-.subcardInfo > p {
-  font-size: 16px;
-  font-weight: 300;
-  color: #292f36;
-  font-family: "museo-sans", sans-serif;
-}
-.subcardInfo > h4 > strong {
-  color: red;
-}
+
 .shopButton {
   display: inline-block;
   position: relative;
@@ -147,9 +97,7 @@ body {
   text-transform: capitalize;
   font-family: "museo-sans", sans-serif;
 }
-.subContainer {
-  padding-bottom: 6rem;
-}
+
 /* social icon  */
 .social-icon > .circle-icon {
   padding: 0.65rem 0.85rem;
@@ -158,18 +106,7 @@ body {
   border-radius: 8px;
 }
 
-/* home page csss */
-.funny {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.form-check-input:checked {
-  background-color: rgb(28, 90, 64);
-  border: rgb(28, 90, 64);
-}
-
-/* input mode  */
+/* Stay Update section  */
 .input-mode {
   display: flex;
   gap: 10px;
@@ -182,7 +119,7 @@ body {
 }
 .fieldInput {
   width: 300px;
-  height: 35px;
+  height: 40px;
   position: relative;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09);
   border-radius: 35px;
@@ -193,6 +130,7 @@ body {
   width: 300px;
   background: none;
   border: none;
+  padding: 8px;
   padding: 8px 20px;
   font-size: 12px;
   color: #6a7c92;
@@ -207,6 +145,7 @@ body {
   right: 0;
   top: 0;
   width: 70px;
+  margin: 3px 4px;
   height: 35px;
   border-radius: 17px;
   border: none;
@@ -214,7 +153,9 @@ body {
   box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
   cursor: pointer;
 }
-/*  */
+
+/* media responsive */
+
 @media screen and (max-width: 1048px) {
   .allCard {
     display: flex;
@@ -233,24 +174,6 @@ body {
     display: inline-grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .subMaincontainer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .cardTitle {
-    padding: 0px 0px;
-    text-align: center;
-  }
-  .any {
-    width: 100%;
-  }
-
-  .cardTypeimg {
-    padding: 0px 0px;
-  }
-  .scrollDown {
-    top: 90%;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -265,32 +188,7 @@ body {
   .subcardInfo {
     padding: 0px 0px;
   }
-  .cardTypeimg {
-    padding: 0px 0px;
-  }
-  .scrollDown > button {
-    min-width: 100%;
-    padding: 0px 35px;
-  }
-  .linksignup {
-    min-width: 10rem;
-  }
 
-  .linksignup > a {
-    font-size: 16px;
-  }
-  .bannerInfo {
-    width: 100%;
-  }
-  .buttonCardsection {
-    margin: 80px 0px;
-  }
-  .bannertitle > h3 {
-    font-size: 45px;
-  }
-  .funny {
-    display: block;
-  }
   .input-mode {
     display: flex;
     flex-direction: column;
@@ -311,27 +209,8 @@ body {
   }
 }
 @media screen and (max-width: 250px) {
-  .scrollDown > button {
-    min-width: 9rem;
-    height: 34px;
-    font-size: 13px;
-  }
-  .linksignup {
-    min-width: 9rem;
-    height: 34px;
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .linksignup > a {
-    font-size: 13px;
-    text-align: center;
-  }
   .allButton {
     display: inline-grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-  .scrollDown {
-    top: 95%;
   }
 }

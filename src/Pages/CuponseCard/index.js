@@ -74,9 +74,9 @@ const CuponsCard = (props) => {
           </div>
         </section>
 
-        {/* cupons code section */}
+        {/*** *cupons code section */}
 
-        <section style={{ marginTop: "20px" }}>
+        <section style={{ marginTop: "60px" }}>
           <div className="container">
             <ul
               className="nav nav-pills mb-3"
@@ -126,7 +126,11 @@ const CuponsCard = (props) => {
                 Food
               </button>
             </ul>
-            <div className="tab-content" id="pills-tabContent">
+            <div
+              className="tab-content"
+              id="pills-tabContent"
+              style={{ marginTop: "60px" }}
+            >
               <div
                 class="tab-pane fade show active"
                 id="pills-home"
@@ -191,12 +195,12 @@ const CuponsCard = (props) => {
         {/* ***
       Offer section
        */}
-        <section style={{ margin: "20px 0px" }}>
+
+        <section style={{ margin: "60px 0px" }}>
           <div
             className="subscirbe-footer"
             style={{
               backgroundColor: "#00FF31",
-              borderRadius: "8px",
               height: "15rem",
               display: "flex",
               flexDirection: "column",
@@ -223,30 +227,6 @@ const CuponsCard = (props) => {
             >
               Here the discription as to why should
             </h6>
-            {/* <div className="input-mode mt-2">
-                <input
-                  placeholder="Enter Subscriber Id"
-                  type="text"
-                  onChange={(e) => onInputChange("subscriber", e.target.value)}
-                  value={user.subscriber.value}
-                />
-                {user.subscriber.error ? (
-                  <div className="error" style={{ color: "#DC3545" }}>
-                    Enter correct subscriber code
-                  </div>
-                ) : (
-                  ""
-                )}
-                <div className="btn-fil">
-                  <button
-                    className="btn-submit"
-                    type="button"
-                    onClick={() => onSubmit}
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div> */}
 
             <form action="">
               <fieldset class="fieldInput">
@@ -258,16 +238,18 @@ const CuponsCard = (props) => {
                   value={user.subscriber.value}
                 />
 
-                <button type="submit" class="form-submit">
+                <button type="submit" class="form-submit" onClick={onSubmit}>
                   Submit
                 </button>
               </fieldset>
             </form>
           </div>
         </section>
+
         {/***
          * footer section  ***/}
-        <section className="social-section" style={{ marginBottom: "20px" }}>
+
+        <section className="social-section" style={{ marginBottom: "60px" }}>
           <div
             className="social-icon"
             style={{
