@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import data from "./data.json";
-import flight from "../../assets/images/flight.mp4";
+import logo from "../../assets/images/logo.png";
 const CuponsCard = (props) => {
   let BrandCupon = data.brandCupons;
   console.log(BrandCupon);
@@ -51,11 +51,7 @@ const CuponsCard = (props) => {
           }}
         >
           <div className="hero-text my-2">
-            <img
-              src="https://assets.stickpng.com/images/585990234f6ae202fedf28cf.png"
-              width="100%"
-              height="90vh"
-            ></img>
+            <img src={logo} width="100%" height="90vh"></img>
           </div>
         </div>
 
