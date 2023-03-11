@@ -3,6 +3,7 @@ import "./index.css";
 import data from "./data.json";
 import tree from "../../assets/images/tree.png";
 import youtube from "../../assets/images/youtube.png";
+import earth from "../../assets/images/earth.png";
 const CuponsCard = (props) => {
   let BrandCupon = data.brandCupons;
   console.log(BrandCupon);
@@ -100,7 +101,7 @@ const CuponsCard = (props) => {
 
         {/*** *cupons code section */}
 
-        <section style={{ marginTop: "100px" }}>
+        <section style={{ marginTop: "100px", marginBottom: "80px" }}>
           <div className="container">
             {/* <ul
               className="nav nav-pills mb-3"
@@ -223,12 +224,12 @@ const CuponsCard = (props) => {
       Offer section
        */}
 
-        <section style={{ margin: "80px 0px" }}>
+        <section>
           <div
             className="subscirbe-footer container-fluid"
             style={{
               backgroundColor: "#F0F4FF",
-              // height: "15rem",
+              height: "100%",
               padding: "1rem",
             }}
           >
@@ -304,6 +305,19 @@ const CuponsCard = (props) => {
               </span>
             </div>
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
+            <div style={{ paddingBottom: "2rem" }}>
+              <span style={{ display: "flex", justifyContent: "center" }}>
+                <img src={earth} width="25px" />
+                &nbsp; Earth Tag is a &nbsp;
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/romilmeghani.com/romil.png"
+                  width="25px"
+                  height="20px"
+                />
+                &nbsp;
+                <a href="">&nbsp;ROM</a> &nbsp; initiative
+              </span>
+            </div>
           </div>
         </section>
 
