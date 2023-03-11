@@ -54,14 +54,20 @@ const CuponsCard = (props) => {
         >
           <div>
             {/* <img src={logo} width="100%" height="90vh"></img> */}
-            <h1 style={{ lineHeight: "1.2rem", fontWeight: "800" }}>
+            <h1
+              style={{
+                lineHeight: "2rem",
+                fontWeight: "800",
+                fontSize: "2.2rem",
+              }}
+            >
               Get 15% off & a{" "}
               <img
                 src={tree}
-                width="35px"
+                width="45px"
                 style={{ paddingBottom: "17px" }}
               ></img>{" "}
-              when you use a coupon
+              just use our coupon
             </h1>
           </div>
           <div
@@ -72,8 +78,8 @@ const CuponsCard = (props) => {
               columnGap: "10px",
             }}
           >
-            <h6>Watch how it works</h6>
-            <img src={youtube} alt="thumbmail" width="33" height="20"></img>
+            <h4>Watch how it works</h4>
+            <img src={youtube} alt="thumbmail" width="50" height="30"></img>
           </div>
         </div>
 
@@ -94,7 +100,7 @@ const CuponsCard = (props) => {
 
         {/*** *cupons code section */}
 
-        <section style={{ marginTop: "70px" }}>
+        <section style={{ marginTop: "100px" }}>
           <div className="container">
             {/* <ul
               className="nav nav-pills mb-3"
@@ -217,7 +223,7 @@ const CuponsCard = (props) => {
       Offer section
        */}
 
-        <section style={{ margin: "70px 0px" }}>
+        <section style={{ margin: "100px 0px" }}>
           <div
             className="subscirbe-footer container-fluid"
             style={{
