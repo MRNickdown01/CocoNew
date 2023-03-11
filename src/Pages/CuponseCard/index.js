@@ -235,7 +235,7 @@ const CuponsCard = (props) => {
             <h4
               style={{
                 color: "#000",
-                fontSize: "1rem",
+                fontSize: "1.5rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
               }}
