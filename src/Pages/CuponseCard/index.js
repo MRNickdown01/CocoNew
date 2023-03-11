@@ -235,9 +235,10 @@ const CuponsCard = (props) => {
             <h4
               style={{
                 color: "#000",
-                fontSize: "1.5rem",
+                fontSize: "1.2rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
+                lineHeight: "1.5rem",
               }}
             >
               We've got 300+ brands in the pipeline
@@ -247,6 +248,7 @@ const CuponsCard = (props) => {
                 color: "#000",
                 fontSize: "18px",
                 marginBottom: "15px",
+                marginTop: "1.2rem",
               }}
             >
               Stay updated via Email
@@ -265,13 +267,12 @@ const CuponsCard = (props) => {
                   onChange={(e) => onInputChange("subscriber", e.target.value)}
                   value={user.subscriber.value}
                 />
-
-                <button type="submit" class="form-submit" onClick={onSubmit}>
-                  Submit
-                </button>
               </fieldset>
+              <button type="submit" class="form-submit" onClick={onSubmit}>
+                Submit
+              </button>
             </form>
-            <hr></hr>
+            <hr style={{ color: "rgb(175 175 175)" }}></hr>
             <span>
               <h6 style={{ color: "#000", fontSize: "18px" }}>On Socials</h6>
             </span>
@@ -302,7 +303,7 @@ const CuponsCard = (props) => {
                 ></i>
               </span>
             </div>
-            <hr></hr>
+            <hr style={{ color: "rgb(175 175 175)" }}></hr>
           </div>
         </section>
 

@@ -139,7 +139,7 @@ body {
   width: 21.5rem;
   height: 50px;
   position: relative;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09);
+  /* box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09); */
   border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
@@ -160,10 +160,10 @@ body {
 .form-submit {
   font-size: 12px;
   color: #ffffff;
-  position: absolute;
+  position: relative;
   right: 0;
   top: 0;
-  width: 70px;
+  width: 34%;
   margin: 3px 4px;
   height: 45px;
   border-radius: 10px;
@@ -171,7 +171,7 @@ body {
   font-weight: 700;
   border: none;
   background: #00902c;
-  box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
+  /* box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09); */
   cursor: pointer;
 }
 
