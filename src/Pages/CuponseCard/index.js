@@ -250,6 +250,7 @@ const CuponsCard = (props) => {
                 fontSize: "18px",
                 marginBottom: "15px",
                 marginTop: "1.2rem",
+                fontWeight: "400",
               }}
             >
               Stay updated via Email
@@ -275,7 +276,11 @@ const CuponsCard = (props) => {
             </form>
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
             <span>
-              <h6 style={{ color: "#000", fontSize: "18px" }}>On Socials</h6>
+              <h6
+                style={{ color: "#000", fontSize: "18px", fontWeight: "400" }}
+              >
+                On Socials
+              </h6>
             </span>
             <div
               className="social-icon"
