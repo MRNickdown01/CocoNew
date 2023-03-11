@@ -53,7 +53,7 @@ const CuponsCard = (props) => {
             textAlign: "start",
           }}
         >
-          <div>
+          <div style={{ marginBottom: "1rem" }}>
             {/* <img src={logo} width="100%" height="90vh"></img> */}
             <h1
               style={{
@@ -230,16 +230,16 @@ const CuponsCard = (props) => {
             style={{
               backgroundColor: "#F0F4FF",
               height: "100%",
-              padding: "1rem",
+              padding: "1.8rem",
             }}
           >
             <h4
               style={{
                 color: "#000",
-                fontSize: "1.5rem",
+                fontSize: "1.7rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
-                lineHeight: "2rem",
+                lineHeight: "2.4rem",
               }}
             >
               We've got 300+ brands in the pipeline
@@ -250,7 +250,7 @@ const CuponsCard = (props) => {
                 fontSize: "18px",
                 marginBottom: "15px",
                 marginTop: "1.2rem",
-                fontWeight: "400",
+                fontWeight: "300",
               }}
             >
               Stay updated via Email
@@ -277,7 +277,7 @@ const CuponsCard = (props) => {
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
             <span>
               <h6
-                style={{ color: "#000", fontSize: "18px", fontWeight: "400" }}
+                style={{ color: "#000", fontSize: "18px", fontWeight: "300" }}
               >
                 On Socials
               </h6>
@@ -320,7 +320,7 @@ const CuponsCard = (props) => {
                   height="20px"
                 />
                 &nbsp;
-                <a href="">&nbsp;ROM</a> &nbsp; initiative
+                <a href="">ROM</a> &nbsp; initiative
               </span>
             </div>
           </div>
