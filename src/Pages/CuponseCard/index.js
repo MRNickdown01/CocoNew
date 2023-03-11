@@ -236,10 +236,10 @@ const CuponsCard = (props) => {
             <h4
               style={{
                 color: "#000",
-                fontSize: "1.2rem",
+                fontSize: "1.5rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
-                lineHeight: "1.5rem",
+                lineHeight: "2rem",
               }}
             >
               We've got 300+ brands in the pipeline
@@ -305,7 +305,7 @@ const CuponsCard = (props) => {
               </span>
             </div>
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
-            <div style={{ paddingBottom: "2rem" }}>
+            <div style={{ paddingBottom: "2rem", paddingTop: "1rem" }}>
               <span style={{ display: "flex", justifyContent: "center" }}>
                 <img src={earth} width="25px" />
                 &nbsp; Earth Tag is a &nbsp;
