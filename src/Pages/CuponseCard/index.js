@@ -4,6 +4,8 @@ import data from "./data.json";
 import tree from "../../assets/images/tree.png";
 import youtube from "../../assets/images/youtube.png";
 import earth from "../../assets/images/earth.png";
+import twitter from "../../assets/images/twitter.png";
+import instagram from "../../assets/images/instagram.png";
 const CuponsCard = (props) => {
   let BrandCupon = data.brandCupons;
   console.log(BrandCupon);
@@ -290,28 +292,20 @@ const CuponsCard = (props) => {
               //   marginTop: "1rem",
               // }}
             >
-              <span className="circle-icon">
-                <i
-                  className="fa-brands fa-instagram"
-                  style={{ fontSize: "20px" }}
-                ></i>
-              </span>
-              <span className="circle-icon">
-                <i
-                  className="fa-brands fa-twitter"
-                  style={{ fontSize: "20px" }}
-                ></i>
-              </span>
-              <span className="circle-icon">
-                <i
-                  className="fa-brands fa-linkedin-in"
-                  style={{ fontSize: "20px" }}
-                ></i>
-              </span>
+              <img src={instagram} height="25px" />
+              <img src={twitter} height="25px" />
+
+              <img src={youtube} height="25px" />
             </div>
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
             <div style={{ paddingBottom: "2rem", paddingTop: "1rem" }}>
-              <span style={{ display: "flex", justifyContent: "center" }}>
+              <span
+                style={{
+                  display: "flex",
+                  justifyContent: "start",
+                  fontWeight: "300",
+                }}
+              >
                 <img src={earth} width="25px" />
                 &nbsp; Earth Tag is a &nbsp;
                 <img
