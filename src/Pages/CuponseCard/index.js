@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./index.css";
 import data from "./data.json";
-import logo from "../../assets/images/logo.png";
+import tree from "../../assets/images/tree.png";
+import youtube from "../../assets/images/youtube.png";
 const CuponsCard = (props) => {
   let BrandCupon = data.brandCupons;
   console.log(BrandCupon);
@@ -44,20 +45,41 @@ const CuponsCard = (props) => {
     <>
       <section>
         <div
-          className="strip-image"
+          className="strip-image container"
           style={{
             height: "100px",
-            backgroundColor: "#FBDDDF",
+            marginTop: "2rem",
+            textAlign: "start",
           }}
         >
-          <div className="hero-text my-2">
-            <img src={logo} width="100%" height="90vh"></img>
+          <div>
+            {/* <img src={logo} width="100%" height="90vh"></img> */}
+            <h1 style={{ lineHeight: "1.2rem", fontWeight: "800" }}>
+              Get 15% off & a{" "}
+              <img
+                src={tree}
+                width="35px"
+                style={{ paddingBottom: "17px" }}
+              ></img>{" "}
+              when you use a coupon
+            </h1>
+          </div>
+          <div
+            style={{
+              textAlign: "start",
+              margin: "2rem 0px",
+              display: "flex",
+              columnGap: "10px",
+            }}
+          >
+            <h6>Watch how it works</h6>
+            <img src={youtube} alt="thumbmail" width="33" height="20"></img>
           </div>
         </div>
 
         {/* video section */}
 
-        <section>
+        {/* <section>
           <div>
             <iframe
               className="iframe-video"
@@ -68,13 +90,13 @@ const CuponsCard = (props) => {
               allowfullscreen
             ></iframe>
           </div>
-        </section>
+        </section> */}
 
         {/*** *cupons code section */}
 
-        <section style={{ marginTop: "60px" }}>
+        <section style={{ marginTop: "70px" }}>
           <div className="container">
-            <ul
+            {/* <ul
               className="nav nav-pills mb-3"
               id="pills-tab"
               role="tablist"
@@ -121,7 +143,7 @@ const CuponsCard = (props) => {
               >
                 Food
               </button>
-            </ul>
+            </ul> */}
             <div
               className="tab-content"
               id="pills-tabContent"
@@ -141,7 +163,10 @@ const CuponsCard = (props) => {
                       key={id}
                     >
                       <img src={i.image} className="" />
-                      <div className="shopButton">{i.label}</div>
+                      <div className="shopButton">
+                        {i.label}
+                        <img src={tree} width="15px"></img>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -192,27 +217,25 @@ const CuponsCard = (props) => {
       Offer section
        */}
 
-        <section style={{ margin: "60px 0px" }}>
+        <section style={{ margin: "70px 0px" }}>
           <div
-            className="subscirbe-footer"
+            className="subscirbe-footer container-fluid"
             style={{
-              backgroundColor: "#00FF31",
-              height: "15rem",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
+              backgroundColor: "#F0F4FF",
+              // height: "15rem",
+              textAlign: "start",
+              padding: "1rem",
             }}
           >
             <h4
               style={{
                 color: "#9116B7",
-                fontSize: "2rem",
+                fontSize: "1rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
               }}
             >
-              Stay Updated
+              We've got 300+ brands in the pipeline
             </h4>
             <h6
               style={{
@@ -221,10 +244,10 @@ const CuponsCard = (props) => {
                 marginBottom: "15px",
               }}
             >
-              Here the discription as to why should
+              get updates in your inbox
             </h6>
 
-            <form action="">
+            <form action="" style={{ marginBottom: "10px" }}>
               <fieldset class="fieldInput">
                 <input
                   class="form-input"
@@ -239,42 +262,47 @@ const CuponsCard = (props) => {
                 </button>
               </fieldset>
             </form>
+            <hr></hr>
+            <span>
+              <h5 style={{ color: "#9B00C0" }}>On Socials</h5>
+            </span>
+            <div
+              className="social-icon"
+              style={{
+                display: "flex",
+                gap: "20px",
+                marginTop: "1rem",
+              }}
+            >
+              <span className="circle-icon">
+                <i
+                  className="fa-brands fa-instagram"
+                  style={{ fontSize: "20px" }}
+                ></i>
+              </span>
+              <span className="circle-icon">
+                <i
+                  className="fa-brands fa-twitter"
+                  style={{ fontSize: "20px" }}
+                ></i>
+              </span>
+              <span className="circle-icon">
+                <i
+                  className="fa-brands fa-linkedin-in"
+                  style={{ fontSize: "20px" }}
+                ></i>
+              </span>
+            </div>
+            <hr></hr>
           </div>
         </section>
 
         {/***
          * footer section  ***/}
 
-        <section className="social-section" style={{ marginBottom: "60px" }}>
-          <div
-            className="social-icon"
-            style={{
-              display: "flex",
-              gap: "20px",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            <span className="circle-icon">
-              <i
-                className="fa-brands fa-instagram"
-                style={{ fontSize: "20px" }}
-              ></i>
-            </span>
-            <span className="circle-icon">
-              <i
-                className="fa-brands fa-twitter"
-                style={{ fontSize: "20px" }}
-              ></i>
-            </span>
-            <span className="circle-icon">
-              <i
-                className="fa-brands fa-linkedin-in"
-                style={{ fontSize: "20px" }}
-              ></i>
-            </span>
-          </div>
-        </section>
+        {/* <section className="social-section" style={{ marginBottom: "60px" }}>
+        
+        </section> */}
       </section>
     </>
   );

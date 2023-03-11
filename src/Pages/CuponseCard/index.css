@@ -61,6 +61,7 @@ body {
 .buttonCard > img {
   max-width: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }
 .allButtons-title {
   padding-bottom: 4rem;
@@ -68,7 +69,7 @@ body {
 .allButton {
   display: inline-grid;
   grid-template-columns: repeat(6, 1fr);
-  row-gap: 20px;
+  row-gap: 10px;
   column-gap: 20px;
 }
 .allButtons > .container > h3 {
@@ -85,11 +86,12 @@ body {
   position: relative;
   top: -18px;
   background: #ffffff;
-  padding: 6px 16px;
-  border-radius: 100px;
-  color: #0a7986;
-  font-size: 14px;
-  font-weight: 700;
+  padding: 8px 9px;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 800;
   text-decoration: none;
   border: 1px solid #f0f2f5;
   box-shadow: 0px 10px 32px rgb(59 74 116 / 16%);
