@@ -48,7 +48,7 @@ const CuponsCard = (props) => {
     <>
       <section>
         <div
-          className="strip-image container"
+          className="strip-image container col-lg-8 col-sm-12"
           style={{
             height: "100px",
             marginTop: "2rem",
@@ -104,7 +104,7 @@ const CuponsCard = (props) => {
         {/*** *cupons code section */}
 
         <section style={{ marginTop: "100px", marginBottom: "80px" }}>
-          <div className="container">
+          <div className="container col-lg-8 col-sm-10">
             {/* <ul
               className="nav nav-pills mb-3"
               id="pills-tab"
@@ -299,13 +299,7 @@ const CuponsCard = (props) => {
             </div>
             <hr style={{ color: "rgb(175 175 175)" }}></hr>
             <div style={{ paddingBottom: "2rem", paddingTop: "1rem" }}>
-              <span
-                style={{
-                  display: "flex",
-                  justifyContent: "start",
-                  fontWeight: "300",
-                }}
-              >
+              <span className="iconfooter">
                 <img src={earth} width="25px" />
                 &nbsp; Earth Tag is a &nbsp;
                 <img
