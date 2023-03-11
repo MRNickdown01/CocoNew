@@ -223,19 +223,18 @@ const CuponsCard = (props) => {
       Offer section
        */}
 
-        <section style={{ margin: "100px 0px" }}>
+        <section style={{ margin: "80px 0px" }}>
           <div
             className="subscirbe-footer container-fluid"
             style={{
               backgroundColor: "#F0F4FF",
               // height: "15rem",
-              textAlign: "start",
               padding: "1rem",
             }}
           >
             <h4
               style={{
-                color: "#9116B7",
+                color: "#000",
                 fontSize: "1rem",
                 letterSpacing: "1px",
                 fontWeight: "bold",
@@ -245,15 +244,19 @@ const CuponsCard = (props) => {
             </h4>
             <h6
               style={{
-                color: "#9116B7",
+                color: "#000",
                 fontSize: "18px",
                 marginBottom: "15px",
               }}
             >
-              get updates in your inbox
+              Stay updated via Email
             </h6>
 
-            <form action="" style={{ marginBottom: "10px" }}>
+            <form
+              action=""
+              style={{ marginBottom: "10px" }}
+              className="input-fill-form"
+            >
               <fieldset class="fieldInput">
                 <input
                   class="form-input"
@@ -270,15 +273,15 @@ const CuponsCard = (props) => {
             </form>
             <hr></hr>
             <span>
-              <h5 style={{ color: "#9B00C0" }}>On Socials</h5>
+              <h6 style={{ color: "#000", fontSize: "18px" }}>On Socials</h6>
             </span>
             <div
               className="social-icon"
-              style={{
-                display: "flex",
-                gap: "20px",
-                marginTop: "1rem",
-              }}
+              // style={{
+              //   display: "flex",
+              //   gap: "20px",
+              //   marginTop: "1rem",
+              // }}
             >
               <span className="circle-icon">
                 <i

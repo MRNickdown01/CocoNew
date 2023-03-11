@@ -100,12 +100,28 @@ body {
   font-family: "museo-sans", sans-serif;
 }
 
+.subscirbe-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.input-fill-form {
+  display: flex;
+  justify-content: center;
+}
 /* social icon  */
 .social-icon > .circle-icon {
-  padding: 0.65rem 0.85rem;
-  background-color: #9b00c0;
+  padding: 0.4rem 0.5rem;
+  background-color: #000;
   color: #ffff;
   border-radius: 8px;
+}
+.social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
 }
 
 /* Stay Update section  */
@@ -120,11 +136,11 @@ body {
   width: 20rem;
 }
 .fieldInput {
-  width: 300px;
-  height: 40px;
+  width: 21.5rem;
+  height: 50px;
   position: relative;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.09);
-  border-radius: 35px;
+  border-radius: 10px;
   background-color: #fff;
   overflow: hidden;
 }
@@ -132,9 +148,10 @@ body {
   width: 300px;
   background: none;
   border: none;
-  padding: 8px;
-  padding: 8px 20px;
-  font-size: 12px;
+  /* padding: 8px; */
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: 700;
   color: #6a7c92;
 }
 .form-input:focus {
@@ -148,10 +165,12 @@ body {
   top: 0;
   width: 70px;
   margin: 3px 4px;
-  height: 35px;
-  border-radius: 17px;
+  height: 45px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
   border: none;
-  background: #9b00c0;
+  background: #00902c;
   box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
   cursor: pointer;
 }
@@ -190,6 +209,12 @@ body {
   .subcardInfo {
     padding: 0px 0px;
   }
+  .subscirbe-footer {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    flex-direction: column;
+  }
 
   .input-mode {
     display: flex;
@@ -208,6 +233,16 @@ body {
   .iframe-video {
     height: 200px;
     width: 100%;
+  }
+  .input-fill-form {
+    display: flex;
+    justify-content: start;
+  }
+  .social-icon {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 250px) {
